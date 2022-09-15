@@ -5,6 +5,7 @@ import CustomerInfo from './invoiceComponents/CustomerInfo'
 import ItemsList from './invoiceComponents/ItemsList'
 import TaxAndTotal from './invoiceComponents/TaxAndTotal'
 
+
 const NewInvoice = () => {
   return (
     <Main>

@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import {   useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-
+  const navigate = useNavigate();
   return (
     <Main>
-      <div className="companyName">TaxAdda</div>
+      <div className="companyName">BillBook</div>
       <div className="spacer"></div>
       <div className="tabs">
-        {/* <div className="home tab-item">Home</div>
-        <div className="about tab-item">about</div>
+        <div onClick={()=>navigate('/home')} className="home tab-item">Home</div>
+        <div onClick={()=>navigate('/requests')} className="about tab-item">Requests</div>
         <div className="profile">
-        <div>alert</div>
-      </div> */}
+        {/* <div>alert</div> */}
+      </div>
       </div>
     </Main>
   );
@@ -23,7 +24,8 @@ const Main = styled.div`
   padding:1em 0;
   display: flex;
   align-items: center;
-    & .spacer {
+
+  & .spacer {
         flex-grow: 1;
     }
   & .companyName {
@@ -43,6 +45,7 @@ const Main = styled.div`
     font-size: 1.2em;
     color: #787777;
     text-shadow: black;
+    padding:0 2% 0 2%;
   }
   & .profile {
       margin-left: 10px;

@@ -1,17 +1,21 @@
 import React from 'react'
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import App from './App'
-import DefaultHome from './landingPages/SignUp'
+import SignUp from './landingPages/SignUp'
+import Requests from './Requests/Requests'
+import Login from './landingPages/LoginPage' 
 
 const RoutesPage = () => {
   return (
     <div>
-        <Router>
+       
         <Routes>
-            <Route path='/' exact element={<DefaultHome/>}></Route>
-            <Route path='/home' element={<App />}></Route>
+            <Route path='/' exact element={<SignUp/>}></Route>
+            <Route path='/login' element={<Login/>}></Route>
+            <Route path='/home' element={<App/>}></Route>
+            <Route path='/requests' element={<Requests/>}></Route>
         </Routes>
-        </Router>
+      
     </div>
   )
 }

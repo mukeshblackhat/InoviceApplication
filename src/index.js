@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import RoutesPages from './RoutesPage';
+// import Test from './Requests/Requests';
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RoutesPages />
-  </React.StrictMode>
+  <BrowserRouter>
+    <RoutesPages/>
+   {/* <Test/> */}
+  </BrowserRouter>
 );

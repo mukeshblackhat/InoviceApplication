@@ -1,6 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import Item from './Invoices/Items'
+import WarrentyFeature from './featureMain/WarrentyCard'
 
 const Invoice = ({invoice}) => {
   return (
@@ -60,8 +61,9 @@ const Invoice = ({invoice}) => {
                     </tr>
                 </tbody>
             </table>
+
         </div>
-       
+       <WarrentyFeature/>
     </Main>
   );
 };

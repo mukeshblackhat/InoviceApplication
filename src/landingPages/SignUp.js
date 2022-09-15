@@ -2,11 +2,12 @@ import React from "react";
 import Styled from "styled-components";
 import signUpImg from "./assests/Receipt.gif";
 import { useState } from "react";
-import {Link }from 'react-router-dom'
+import {Link,useNavigate }from 'react-router-dom'
 
 const SignUp = () => {
   const [type, setType] = useState("none");
   console.log(type);
+  const navigate =useNavigate();
 
  const sellerHandler=()=>{
     setType("seller")
@@ -25,7 +26,7 @@ const SignUp = () => {
         <button onClick={sellerHandler} className="sellerButton">Seller</button>
         <button  onClick={buyerHandler}className="buyerButton">Buyer</button>
       </div>
-      <div className="already">already have account LogIn</div>{" "}
+      <div onClick={()=>{navigate('/login')}} className="already highLogin">already have account LogIn</div>{" "}
     </>
   );
 
@@ -54,7 +55,7 @@ const SignUp = () => {
         </div>
         <div className="input">
             <Link to='/home'>
-          <input type="submit" />
+          <input  type="submit" />
             </Link>
         </div>
       </form>
@@ -82,7 +83,7 @@ const SignUp = () => {
         </div>
         <div className="input">
             <Link to='/home'>
-          <input type="submit" />
+          <input  type="submit" />
             </Link>
         </div>
       </form>
@@ -120,6 +121,9 @@ const Main = Styled.div`
     
 
 
+}
+.highLogin:hover {
+  font-weight:bolder;
 }
 /* left container here */
 .leftContainer{

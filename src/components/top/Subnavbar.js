@@ -5,7 +5,7 @@ import NewInvoice from '../../newInvoice/NewInvoice'
 
 
 
-const Subnavbar = () => {
+const Subnavbar = (props) => {
   const [modalState , setModalState]=useState({status:false , current:null})
  
   const customStyles = {
@@ -35,13 +35,20 @@ const Subnavbar = () => {
    console.warn("Create Invoice function")
   
   }
+
+ 
+
   return (
     <Main>
-        <div className="subItem span">Invoices</div>
+
+        <div className="subItem span">{props.currentValue}</div>
         <div className="subItem">
          
-
-           <div onClick={ ()=>{setModalState({...modalState, status: true})}} className="button">+NewInvoice</div>
+          {props.generater?
+           <div onClick={ ()=>{setModalState({...modalState, status: true})}} className="button buttonDisplay">+NewInvoice</div>
+          :<div></div>
+        }
+           {/* <div onClick={ ()=>{setModalState({...modalState, status: true})}} className="button buttonDisplay">+NewInvoice</div> */}
            
 
            <ReactModal 

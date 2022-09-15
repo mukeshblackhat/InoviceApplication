@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import "./global.css";
-import {Navbar, SubNavbar, Headings, MainPage} from "./components";
+import "../global.css";
+import {Navbar, SubNavbar, Headings, MainPage} from "../components/index";
 
 function App() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -10,7 +10,7 @@ function App() {
       <div className="contianer">
         <div className="topHead">
           <Navbar className="navbar" />
-          <SubNavbar currentValue={"Invoices"} generater={true} />
+          <SubNavbar currentValue={"All Requests"} generater={false} />
           <Headings setCurrentTab={setCurrentTab} />
         </div>
         <div className="bottomPage">

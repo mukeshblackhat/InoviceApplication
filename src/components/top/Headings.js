@@ -20,7 +20,7 @@ const Headings = ({setCurrentTab}) => {
           <div className="sub_items" id="4" onClick= {changeTab}>Paid</div>
         </div>
         <div>
-         <div className="sub_items timeButton">period:  <span className="span">May2020</span></div>
+         {/* <div className="sub_items timeButton">period:  <span className="span">May2020</span></div> */}
         </div>
     </Main>
   )

@@ -7,8 +7,8 @@ const CompanyInfo = () => {
       <div className="companyInfo">
       <div className='companyLogo'>Company Logo</div>
       <div className='companyAddr'>
-        <input className="companyName" type="text" placeholder="company name" />
-        {/* <div className="companyName"> Your Company Name</div> */}
+        {/* <input className="companyName" type="text" placeholder="company name" /> */}
+        <div className="companyName"> Your Company Name</div>
         <div className="adderres">Your Business Adderess</div>
         <div className="city">City</div>
         <div className="country">Country</div>

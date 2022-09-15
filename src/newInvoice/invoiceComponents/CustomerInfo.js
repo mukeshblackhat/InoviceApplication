@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 function CustomerInfo() {
+  const current =new Date();
+  const date=`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
   return (
     <Main >
       <div className="custmerInfo">
@@ -17,7 +19,7 @@ function CustomerInfo() {
           <div className="heading">Invoice no.</div>
           <div> in number here</div>
           <div className="heading">Issue Date</div>
-          <div>dd/mm/yy</div>
+          <div>{date}</div>
           <div className="heading">Due Date</div>
           <div>dd/mm/yy</div>
         </div>
