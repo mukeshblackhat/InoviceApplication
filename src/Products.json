@@ -1,0 +1,75 @@
+[
+{
+    "productName":"AirTag",
+    "id":"1",
+    "quantity":"1",
+    "price":"120",
+    "gstRate":"5"
+},
+{
+    "productName":"Apple TV HD",
+    "id":"2",
+    "quantity":"1",
+    "price":"212",
+    "gstRate":"5"
+},
+{
+    "productName":"Apple TV 4K",
+    "id":"3",
+    "quantity":"1",
+    "price":"132",
+    "gstRate":"5"
+},
+{
+    "productName":"Apple Watch",
+    "id":"4",
+    "quantity":"1",
+    "price":"152",
+    "gstRate":"5"
+},
+{
+    "productName":"Apple Watch SE",
+    "id":"6",
+    "quantity":"1",
+    "price":"162",
+    "gstRate":"5"
+},
+{
+    "productName":"HomePod mini",
+    "id":"7",
+    "quantity":"1",
+    "price":"712",
+    "gstRate":"5"
+},
+{
+    "productName":"iMac",
+    "id":"8",
+    "quantity":"1",
+    "price":"192",
+    "gstRate":"5"
+},
+{
+    "productName":"iPad",
+    "id":"9",
+    "quantity":"1",
+    "price":"712",
+    "gstRate":"5"
+},
+{
+    "productName":"iPad Air",
+    "id":"10",
+    "quantity":"1",
+    "price":"1772",
+    "gstRate":"5"
+},
+{
+    "productName":"iPad mini",
+    "id":"11",
+    "quantity":"1",
+    "price":"812",
+    "gstRate":"5"
+}
+
+
+
+]

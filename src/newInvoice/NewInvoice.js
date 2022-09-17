@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import CompanyInfo from './invoiceComponents/CompanyInfo'
 import CustomerInfo from './invoiceComponents/CustomerInfo'
 import ItemsList from './invoiceComponents/ItemsList'
-import TaxAndTotal from './invoiceComponents/TaxAndTotal'
+// import TaxAndTotal from './invoiceComponents/TaxAndTotal'
 
 
 const NewInvoice = () => {
@@ -14,7 +14,7 @@ const NewInvoice = () => {
           <CompanyInfo/>
           <CustomerInfo/>
           <ItemsList/>
-          <TaxAndTotal/>
+          {/* <TaxAndTotal/> */}
         
        </div> 
     </Main>

@@ -2,7 +2,8 @@ import React from 'react'
 import Styled from 'styled-components'
 
 const Items = ({lineItem}) => {
-   
+  
+ 
 
   return (
     
@@ -13,7 +14,7 @@ const Items = ({lineItem}) => {
                 <td className="toAll">{lineItem.quantity}</td>
                 <td className="toAll">{lineItem.price}</td>
                 <td className="toAll">{lineItem.gstRate}</td>
-                <td className="toAll">{lineItem.amount}</td>
+                <td className="toAll">{(+lineItem.quantity)*(+lineItem.price)}</td>
               </tr>
         
    
