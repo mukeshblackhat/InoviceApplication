@@ -2,32 +2,25 @@ import React from "react";
 import Styled from "styled-components";
 import signUpImg from "./assests/Receipt.gif";
 // import { useState ,useNavigate} from "react";
-import {Link }from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
-  
-
-
-
   return (
     <Main>
       <div className="mainContainer">
         <div className="leftContainer">
-      
-        <div className="appSlogan">No more Paper No More Worries</div>
-        <div className="emailId input ">
-          <label>Email Id</label>
-          <input type="text" placeholder="your@gmail.com" />
-        </div>
-        <div className="emailId input ">
-          <label>Password</label>
-          <input type="password" placeholder="your password" />
-        </div>
-        <div className="input">
-         
-            <button  >Login</button>
-        </div>
-       
+          <div className="appSlogan">No more Paper No More Worries</div>
+          <div className="emailId input ">
+            <label>Email Id</label>
+            <input type="text" placeholder="your@gmail.com" />
+          </div>
+          <div className="emailId input ">
+            <label>Password</label>
+            <input type="password" placeholder="your password" />
+          </div>
+          <div className="input">
+            <button>Login</button>
+          </div>
         </div>
 
         <div className="rightContainer">
@@ -49,6 +42,7 @@ const Main = Styled.div`
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    color:rgb(39, 38, 38) !important;
     
 
 
@@ -57,29 +51,29 @@ const Main = Styled.div`
 .leftContainer{
     
     width:40%;
-    height:80%;
+    height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     margin:1rem;
-    overflow:hidden;
+  
     
 }
 
 .heading{
     font-size:4rem;
-  font-weight:bolder;
+    font-weight:bolder;
     margin:1rem;
     margin-top:0;
-    height:5rem;
+     
 }
 
 .appSlogan{
     font-size:2rem;
-    padding:2rem;
-    padding-top:0;
+    padding:20px;
     height:3rem;
+    margin-bottom:20px;
 }
 .twoButtons{
     height:5rem;
@@ -130,11 +124,14 @@ const Main = Styled.div`
 }
 .input{
     display:flex;
-    flex-direction:column;
+    width:75%;
     margin:1rem;
 }
 label{
     margin-bottom:.5rem;
+    min-width:100px;
+    display:flex;
+    align-items:center; 
 }
 
 /* right container here  */
@@ -154,6 +151,19 @@ label{
     aspect-ratio:1;
     height:100%;
     width:100%;
+}
+input{
+  padding:10px;
+  border-radius:5px;
+  border:1px solid grey;
+  width:100%;
+}
+
+button{
+  border:none;
+  width:100%;
+  background:grey;
+  padding:10px 40px ;
 }
 
 

@@ -2,31 +2,40 @@ import React from "react";
 import Styled from "styled-components";
 import signUpImg from "./assests/Receipt.gif";
 import { useState } from "react";
-import {Link,useNavigate }from 'react-router-dom'
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [type, setType] = useState("none");
   console.log(type);
-  const navigate =useNavigate();
+  const navigate = useNavigate();
 
- const sellerHandler=()=>{
-    setType("seller")
-  }
-  
+  const sellerHandler = () => {
+    setType("seller");
+  };
 
-  const buyerHandler=()=>{
-    setType("buyer")
-  }
-
+  const buyerHandler = () => {
+    setType("buyer");
+  };
 
   let choose = (
     <>
       {" "}
       <div className="twoButtons">
-        <button onClick={sellerHandler} className="sellerButton">Seller</button>
-        <button  onClick={buyerHandler}className="buyerButton">Buyer</button>
+        <button onClick={sellerHandler} className="sellerButton">
+          Seller
+        </button>
+        <button onClick={buyerHandler} className="buyerButton">
+          Buyer
+        </button>
       </div>
-      <div onClick={()=>{navigate('/login')}} className="already highLogin">already have account LogIn</div>{" "}
+      <div
+        onClick={() => {
+          navigate("/login");
+        }}
+        className="already highLogin"
+      >
+        already have account LogIn
+      </div>{" "}
     </>
   );
 
@@ -49,14 +58,14 @@ const SignUp = () => {
           <label>Contact Number</label>
           <input type="text" placeholder="+919XXXXXXX" />
         </div>
-        <div className="adderess input  ">
+        <div className="adderess input">
           <label>Company Adderess</label>
           <input type="text" placeholder="company adderess" />
         </div>
         <div className="input">
-            <Link to='/home'>
-          <input  type="submit" />
-            </Link>
+          <Link to="/home">
+            <input type="submit" />
+          </Link>
         </div>
       </form>
     </div>
@@ -82,9 +91,9 @@ const SignUp = () => {
           <input type="text" placeholder="your adderess" />
         </div>
         <div className="input">
-            <Link to='/home'>
-          <input  type="submit" />
-            </Link>
+          <Link to="/home">
+            <input type="submit" />
+          </Link>
         </div>
       </form>
     </div>
@@ -133,11 +142,12 @@ const Main = Styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     margin:1rem;
-    overflow:hidden;
+ 
     
 }
+
 
 .heading{
     font-size:4rem;
@@ -149,9 +159,9 @@ const Main = Styled.div`
 
 .appSlogan{
     font-size:2rem;
-    padding:2rem;
-    padding-top:0;
+    padding:1rem;
     height:3rem;
+    margin-bottom:20px;
 }
 .twoButtons{
     height:5rem;
@@ -195,18 +205,26 @@ const Main = Styled.div`
 }
 .sellerForm{
     display:flex;
-    justify-content:center;
     font-size:1.5rem;
-    font-weight:bold;
+    width:100%;
 
+}
+form{
+  width:100%;
+  font-size:1rem;
+  
 }
 .input{
     display:flex;
     flex-direction:column;
     margin:1rem;
+    font-size:1.5rem;
+    width:100%;
 }
 label{
     margin-bottom:.5rem;
+    width:100%;
+    font-size:1rem;
 }
 
 /* right container here  */
@@ -227,6 +245,17 @@ label{
     height:100%;
     width:100%;
 }
+input{
+  padding:10px;
+  border-radius:5px;
+  border:1px solid grey;
+  width:100%;
+}
+Link{
+  
+  background:grey;
+}
+
 
 
 
