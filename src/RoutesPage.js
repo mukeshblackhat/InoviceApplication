@@ -12,7 +12,7 @@ const RoutesPage = () => {
         <Routes>
             <Route path='/' exact element={<SignUp/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
-            <Route path='/home' element={<App/>}></Route>
+            <Route path='/Defaulthome' element={<App/>}></Route>
             <Route path='/requests' element={<Requests/>}></Route>
         </Routes>
       

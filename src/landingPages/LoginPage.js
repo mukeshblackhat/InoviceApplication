@@ -21,7 +21,7 @@ const SignUp = () => {
             <input type="password" placeholder="your password" />
           </div>
           <div className="input">
-          <Link to="/home">
+          <Link to="/Defaulthome">
           <button >Login</button>
           </Link>
           </div>

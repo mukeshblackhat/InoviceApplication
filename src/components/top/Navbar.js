@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="companyName">BillBook</div>
       <div className="spacer"></div>
       <div className="tabs">
-        <div onClick={()=>navigate('/home')} className="home tab-item">Home</div>
+        <div onClick={()=>navigate('/Defaulthome')} className="home tab-item">Home</div>
         <div onClick={()=>navigate('/requests')} className="about tab-item">Requests</div>
         <div className="profile">
         {/* <div>alert</div> */}
