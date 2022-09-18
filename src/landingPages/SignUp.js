@@ -63,7 +63,7 @@ const SignUp = () => {
           <input type="text" placeholder="company adderess" />
         </div>
         <div className="input">
-          <Link to="/home">
+          <Link to="/Defaulthome">
             <input type="submit" />
           </Link>
         </div>
@@ -91,7 +91,7 @@ const SignUp = () => {
           <input type="text" placeholder="your adderess" />
         </div>
         <div className="input">
-          <Link to="/home">
+          <Link to="/Defaulthome">
             <input type="submit" />
           </Link>
         </div>
