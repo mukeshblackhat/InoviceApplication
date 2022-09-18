@@ -15,8 +15,8 @@ const Headings = ({setCurrentTab}) => {
         <div className="allSubHooks">
           <div className="bottom sub_items" id="0" onClick= {changeTab}>All Invoices</div>
           <div className="sub_items" id="1" onClick= {changeTab}>Drafts</div>
-          <div className="sub_items" id="2" onClick= {changeTab}>Outstandings</div>
-          <div className="sub_items" id="3" onClick= {changeTab}>Past Due</div>
+          {/* <div className="sub_items" id="2" onClick= {changeTab}>Outstandings</div> */}
+          {/* <div className="sub_items" id="3" onClick= {changeTab}>Past Due</div> */}
           <div className="sub_items" id="4" onClick= {changeTab}>Paid</div>
         </div>
         <div>

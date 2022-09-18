@@ -20,8 +20,8 @@ function CustomerInfo() {
           <div> in number here</div>
           <div className="heading">Issue Date</div>
           <div>{date}</div>
-          <div className="heading">Due Date</div>
-          <div>dd/mm/yy</div>
+          {/* <div className="heading">Due Date</div>
+          <div>dd/mm/yy</div> */}
         </div>
       </div>
     </Main>

@@ -255,7 +255,54 @@ Link{
   
   background:grey;
 }
-
+@media (max-width:600px){
+  .mainContainer{
+    text-align:center;
+  }
+  .twoButtons{
+    width:100%;
+    height:auto;
+  }
+  .highLogin{
+    width:100%;
+   
+  }
+  .heading{
+    font-size:3rem;
+  }
+  .leftContainer{
+    width:100%;
+    display:flex;
+  }
+  .rightContainer{
+    display:none;
+  }
+  .appSlogan{
+    font-size:1.5rem;
+    /* padding:1rem; */
+    width:100%;
+    /* height:3rem; */
+    margin-bottom:20px;
+}
+}
+@media (max-width:1200px){
+  
+  .heading{
+    font-size:3.5rem;
+    width:100%;
+  }
+  .appSlogan{
+    font-size:2rem;
+    /* padding:1rem; */
+    height:auto;
+    /* margin-bottom:20px; */
+}
+}
+@media (max-width:1000px){
+  .heading{
+    font-size:2.7rem;
+  }
+}
 
 
 

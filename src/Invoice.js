@@ -20,7 +20,7 @@ const Invoice = ({invoice}) => {
         <div className="toAll">BillTo: {invoice.name}</div>
         <div className="toAll">Invoice# :{invoice.billNo}</div>
         <div className="toAll">Date : {invoice.billDate}</div>
-        <div className="toAll">Invoice Due Date:{invoice.dueDate}</div>
+        {/* <div className="toAll">Invoice Due Date:{invoice.dueDate}</div> */}
       </div>
         <div className="billItems">
           <table>
@@ -30,7 +30,7 @@ const Invoice = ({invoice}) => {
                 <td className="toAll">DESCRIPTION</td>
                 <td className="toAll">QUANTITY</td>
                 <td className="toAll">PRICE</td>
-                <td className="toAll">TAX</td>
+                {/* <td className="toAll">TAX</td> */}
                 <td className="toAll">AMOUNT</td>
               </tr>
             </thead>

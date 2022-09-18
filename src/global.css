@@ -14,3 +14,8 @@ body {
 
   color: rgb(42, 42, 42);
 }
+@media (max-width:600px){
+  body{
+    font-size:1rem;
+  }
+}

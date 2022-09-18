@@ -11,8 +11,8 @@ const Invoicesort = ({invoice, setModalState})=> {
             <td>{invoice.name}</td>
             <td>{invoice.billNo}</td>
             <td>{invoice.netAmount}</td>
-            <td>MonthYear</td>
-            <td>when</td>
+            {/* <td>MonthYear</td>
+            <td>when</td> */}
             <td>billDate</td>
             <td>{invoice.status}</td>
     </tr>

@@ -3,8 +3,10 @@ import Styled from "styled-components";
 import signUpImg from "./assests/Receipt.gif";
 // import { useState ,useNavigate} from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate=useNavigate();
   return (
     <Main>
       <div className="mainContainer">
@@ -19,7 +21,9 @@ const SignUp = () => {
             <input type="password" placeholder="your password" />
           </div>
           <div className="input">
-            <button>Login</button>
+          <Link to="/home">
+          <button >Login</button>
+          </Link>
           </div>
         </div>
 
@@ -164,6 +168,30 @@ button{
   width:100%;
   background:grey;
   padding:10px 40px ;
+}
+ 
+@media (max-width:600px){
+  .heading{
+    font-size:3rem;
+  }
+  .leftContainer{
+    width:100%;
+    display:flex;
+  }
+  .rightContainer{
+    display:none;
+  }
+  .appSlogan{
+    font-size:1.5rem;
+    padding:1rem;
+    /* height:3rem; */
+    margin-bottom:20px;
+}
+}
+@media (max-width:1024px){
+  .appSlogan{
+    height:auto;
+  }
 }
 
 

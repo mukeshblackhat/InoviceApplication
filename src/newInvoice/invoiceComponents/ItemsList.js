@@ -6,26 +6,31 @@ import Item from '../../Invoices/Items'
 
 const ItemsList = () => {
   const [items , setItems]=useState([]);
-  // let total=
-  // console.log(total)
+
+  let totalAmount=0;
+  let total = items.map((item)=>totalAmount + (+item[0].price));
+  
+  const sum =(totalAmount,num)=>{ return totalAmount=totalAmount+num;}
+
+  console.log(totalAmount)
 
   const onChange=(e)=>{
    
     setItems([...items,ItemList.filter((item)=>e.target.value===item.productName)]);
-    
+      
   }
-  console.log(items)
+  
   return (
     <Main className="itemList">
         <table className="itemListAdded">
             <thead>
               <tr>
-                <td className="toAll">ITEMS</td>
-                <td className="toAll">DESCRIPTION</td>
-                <td className="toAll">QUANTITY</td>
-                <td className="toAll">PRICE</td>
-                <td className="toAll">TAX</td>
-                <td className="toAll">AMOUNT</td>
+                <td className="toAll head">ITEMS</td>
+                <td className="toAll head">DESCRIPTION</td>
+                <td className="toAll head">QUANTITY</td>
+                <td className="toAll head">PRICE</td>
+                {/* <td className="toAll head">TAX</td> */}
+                <td className="toAll head">AMOUNT</td>
               </tr>
             </thead>
             
@@ -37,25 +42,27 @@ const ItemsList = () => {
             
             </tbody>
           </table>
-          <table className="lastList">
+          <table className="lastListTable">
                
                <thead>
                    <tr>
-                       <td>Gross Amount</td>
-                       <td>GST Amount</td>
-                       <td>Net Amount</td>
+                       <td className="toAll head" >GROSS AMOUNT</td>
+                       <td className="toAll head">GST AMOUNT</td>
+                       <td className="toAll head">NET AMOUNT</td>
                    </tr>
                </thead>
                <tbody>
                    <tr>
-                       <td>total</td>
-                       <td>
+                       <td className="toAll">{total.reduce(sum ,0)}</td>
+                       <td className="toAll">
                            gstAmount
                        </td>
-                       <td>NetAmount </td>
+                       <td className="toAll">NetAmount </td>
                    </tr>
                </tbody>
+               <tfoot><button className=" payButton">PAY </button></tfoot>
            </table>
+           
 
     </Main>
   )
@@ -71,6 +78,10 @@ const Main = styled.div`
 
  & .toAll{
      padding:.2em;
+
+ }
+ & .head{
+  font-weight:bolder;
  }
 
 
@@ -79,11 +90,20 @@ const Main = styled.div`
    height:50vh;
    position: relative;
  }
-& .lastList{
+& .lastListTable{
   /* margin-bottom:0; */
   position:absolute;
-  bottom:0;
+  bottom:1em;
+  right:0;
+  padding:2rem;
+  text-align:center;
   //stick it to bottom
+}
+& .payButton{
+  left:0;
+  /* position:absolute; */
+  padding:.5rem;
+  text-align:center;
 }
 
 `

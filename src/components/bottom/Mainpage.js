@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ReactModal from 'react-modal'
 import MainBody from "./MainBody";
 import Invoice from "../../Invoice";
-import { withTheme } from "styled-components";
+// import { withTheme } from "styled-components";
 
 const Mainpage = ({ currentTab }) => {
   const [data, setData] = useState({});
@@ -87,8 +87,8 @@ const Mainpage = ({ currentTab }) => {
             <td>Customer</td>
             <td>Invoice#</td>
             <td>Amount</td>
-            <td>Period</td>
-            <td>Due</td>
+            {/* <td>Period</td>
+            <td>Due</td> */}
             <td>Created</td>
             <td>Status</td>
           </tr>
